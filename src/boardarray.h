@@ -31,8 +31,10 @@ class BoardArray : public Board {
                         array[j] = array[j - 1];
                     }
                     
+                  
                     array[i] = *entry;
-            
+                    
+                
                     if (index < SIZE) {
                         index++;
                     }
@@ -44,7 +46,7 @@ class BoardArray : public Board {
                 array[index] = *entry;
                 index++;
             }
-}
+    }
 
         void print() {
             for (int i = 0; i < index; i++) {
